@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+
+
+.header a {
+    color: #010101;
+}
+
+.header{
+    background: #ddd;
+      position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    z-index: 99;
+}
+.h-logo {
+    width: 30%;
+}
+.logo img{
+    height:60px;
+}
+.logo span{
+    display: inline-block;
+    font-size: 28px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 60px;
+    font-weight: 600;
+    margin-left: 20px;
+} 
+.h-menu{
+    width: 55%;
+}
+.p-menu{}
+.p-menu ul{
+    text-decoration: none;
+}
+.p-menu ul li{
+    display: inline-block;
+    position: relative;
+    padding: 0 30px;
+    
+}
+.p-menu ul li a{
+    display: block;
+    font-size: 19px;
+    line-height: 60px;
+   
+    
+   
+
+}
+.p-menu ul li:hover a{
+    color: #6278df;
+   
+}
+.h-bottom{
+    width: 15%;
+}
+.header-btn{
+    display: inline-block;
+    border: 2px solid #6278df;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-size: 19px;
+    margin-top: 9px;
+    color: #6278df!important;
+    font-weight: 600
+}
+
+
+             /*drop down menu*/
+
+.p-menu ul li{
+    position: relative;
+}
+.p-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform:scaleX(0) ;
+    transform-origin: top center;
+
+
+}
+.p-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform:scaley(1) ;
+ 
+
+    
+}
+
+
+.p-menu ul li ul li:hover a{
+    color: #010101;
+}
+         /*Banner */
+
+.banner{
+    background: url(./img/nb_esc_cover.jpg) no-repeat center ;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 9;
+}
+.banner::after{
+    content: "";
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.banner-text{}
+.banner-text h3{
+    color: #ddd;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.banner-text h2{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 900;
+}
+.banner-btn {
+    color:#7d7d7d    ;
+    display: inline-block;
+    padding: 12px 20px;
+     border-radius: 10px;
+    background: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+.banner-btn:hover{
+    background: #6278df;
+    color: #fff;
+    transition: .5s;
+}
+
+
+            /*video*/
+
+
+.video{
+    background: #F7F9FF;
+    padding: 100px 0;
+}
+
+.video-left{
+    width: 48%;
+}
+.video-text{
+    width: 48%;
+   
+}
+.video-text h3{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.video-text p{
+    color: #767676;
+    font-size: 17px;
+    line-height: 30px;
+}
+   
+
+
+    /*servic*/
+
+.service-section{
+    background: #fff;
+    padding: px 0;
+    /*! margin-top: 300px; */
+}
+.scetion-title h1{
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: 500;
+
+}
+.scetion-title p{
+    color: #767676;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+     /*servic*/
+.services-items{
+    background: #fff;
+    margin-top: 62px;
+
+    padding: 0 40px;
+    /*! margin: auto; */
+}
+.service-box{
+    width: 28.3%;
+    margin-right: 2%;
+    box-shadow: 4px 4px 20px rgba(0,0,0,.5) ;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-left: 3%;
+} 
+.services-text{}
+.services-text h2{ 
+    margin-bottom: 10px;
+   
+    font-size: 30px;
+    margin-left: 6px;
+    display: inline-block;
+}
+.services-text p{
+    color: #767676;
+    line-height: 28px;
+    font-size: 20px;
+    margin-left: 68px;
+}
+.services-icon span{
+    float: left;
+    width: 54px;
+    height: 142px;
+    font-size: 45px;
+ 
+    color: #6278df;
+}
